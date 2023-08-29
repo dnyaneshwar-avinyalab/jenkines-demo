@@ -1,0 +1,69 @@
+
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000" styleClass="w-13rem" >
+    <ng-template pTemplate="header">
+        <span class="sidebarTitle"> Office Management</span>
+    </ng-template>
+    
+    <div class="Content-wrapper">
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-1</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-2</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-3</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-4</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-5</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-6</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-7</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-8</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-9</h3>
+        </div>
+        <div class="flex sidebarcontent">
+            <i class="pi pi-home"></i>
+            <h3 class="ml-2">Content-10</h3>
+        </div>
+        <div class="flex sidebarcontent" (click)="toggle()">
+            <i class="pi pi-angle-double-down"></i>
+            <h3 class="ml-2">Content-11</h3>
+            <i class="pi pi-angle-double-down ml-2"></i>
+
+        </div>
+        <div *ngIf="show" class="">
+            <div class="flex sidebarcontent">
+                <i class="pi pi-home"></i>
+                <h3 class="ml-2 text-base">SubContent-1</h3>
+            </div>
+            <div class="flex sidebarcontent">
+                <i class="pi pi-home"></i>
+                <h3 class="ml-2 text-base">SubContent-2</h3>
+            </div>
+        </div>
+
+    </div>
+</p-sidebar>
+<div class="logo flex flex-column" (click)="visibleSidebar = true" modal="false">
+    <i class="pi pi-bars sidebarButton"></i>
+</div>

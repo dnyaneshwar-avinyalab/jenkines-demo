@@ -1,0 +1,63 @@
+   
+    .container{
+        height:50px;
+        background-color: #F1D4CD;
+        width: 100% !important;
+    }
+    .logo{
+        margin: 15px;
+        cursor: pointer;
+    }
+    .logo i{
+        font-size: 20px;
+    }
+    .title{
+        margin: 15px;
+    }
+    .inputBox{
+        margin:4px 60px;
+    }
+    .menuList{
+        margin: 15px;   
+    }
+    .menuList h5{
+        margin: 0 15px;
+        cursor: pointer;
+    }
+    .topbarMenu{
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        margin-left: 100px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .topbarMenu i{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 9px;
+        color: #fff;
+
+        
+
+    }
+    
+  
+    
+    @media (max-width:900px) {
+        .inputBox{
+            display: none;
+        }
+    }
+    @media (max-width:800px) {
+        .menu h5{
+            display: none;
+        }
+    }
+    @media (max-width:800px) {
+        .topbarMenu {
+            float: right;
+        }
+    }

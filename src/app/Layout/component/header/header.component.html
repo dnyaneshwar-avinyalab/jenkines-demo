@@ -1,0 +1,22 @@
+<div class="container flex">
+    <div class="title">
+        <h4>Office Management System</h4>
+    </div>
+    <div class="inputBox"> 
+       <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" class="p-inputtext-sm w-25rem" placeholder="Search" pInputText [(ngModel)]="value" />
+        </span>
+    </div>
+    <div class="menuList flex ">
+        <h5>Home</h5>
+        <h5>Home</h5>
+        <h5>Home</h5>
+        <h5>Home</h5>
+        <h5>Home</h5>
+    </div>
+        <div class="topbarMenu mt-1" (click)="menu.toggle($event)" label="Show">
+            <i class="pi pi-user menuIcon "></i>
+            <p-menu #menu [model]="items" [popup]="true"></p-menu>
+        </div>
+</div>  
